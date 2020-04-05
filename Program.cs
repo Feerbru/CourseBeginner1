@@ -22,9 +22,24 @@ namespace CourseBeginner1
             song2.Seconds = 300;
             song2.Position = new ShelvePosition(1, 0);
 
+            PlayList<Song> playListSong = new PlayList<Song>;
+
+            playListSong.Add(song);
+            playListSong.Add(song2);
+
+            WriteLineSpecial(song, "Start with", "enjoy");
+
             Console.WriteLine(song2.ToString());
 
+            Tuple<int, string, Song> tuple = new Tuple<int, string, Song>(0, "Hola", song);
+
             Console.ReadKey();
+        }
+
+        static void WriteLineSpecial<T>(T data, string prefix, string suffix)
+        {
+            Console.WriteLine($"{prefix} {data} {suffix}");
+
         }
     }
 }
