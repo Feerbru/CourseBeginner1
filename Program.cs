@@ -22,7 +22,10 @@ namespace CourseBeginner1
             song2.Seconds = 300;
             song2.Position = new ShelvePosition(1, 0);
 
-            PlayList<Song> playListSong = new PlayList<Song>;
+            PlayList<Song> playListSong = new PlayList<Song>();
+
+            List<int> list = new List<int>();
+           
 
             playListSong.Add(song);
             playListSong.Add(song2);
@@ -38,7 +41,7 @@ namespace CourseBeginner1
 
         static void WriteLineSpecial<T>(T data, string prefix, string suffix)
         {
-            Console.WriteLine($"{prefix} {data} {suffix}");
+            Console.WriteLine("{0} {1} {2}",prefix,data,suffix);
 
         }
     }
