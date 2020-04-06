@@ -15,6 +15,8 @@ namespace CourseBeginner1
 
         List<T> listMedia = new List<T>();
 
+
+
         public void Add(T media)
         {
             listMedia.Add(media);
